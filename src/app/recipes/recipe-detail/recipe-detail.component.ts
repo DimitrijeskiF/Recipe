@@ -12,7 +12,6 @@ export class RecipeDetailComponent implements OnInit {
 
   recipe: Recipe;
   id: number;
-  visible = true;
 
   constructor(
     private route: ActivatedRoute,
@@ -36,10 +35,5 @@ export class RecipeDetailComponent implements OnInit {
     this.router.navigate(['/recipes'])
   }
 
- checkHours() {
-   if(this.recipe.hour !== 0) {
-    this.visible = false;
-   }
- }
 
 }
